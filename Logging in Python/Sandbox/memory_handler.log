@@ -1,0 +1,9 @@
+2018-05-31 10:01:07,501 INFO Calling mortgage calculator
+2018-05-31 10:01:07,502 DEBUG Fetching current interest rate for 0 years
+2018-05-31 10:01:07,502 DEBUG Service returned interest rate 5.300000
+2018-05-31 10:01:07,502 DEBUG Number of monthly payments 0
+2018-05-31 10:01:07,502 ERROR caught exception
+Traceback (most recent call last):
+  File "C:/Users/Admin/PycharmProjects/Logging in Python/Advanced Handlers/Memory handler/memory_handler.py", line 25, in get_monthly_payment
+    result = principal * (mon_rate/(1-math.pow((1+mon_rate), -payments)))
+ZeroDivisionError: float division by zero
